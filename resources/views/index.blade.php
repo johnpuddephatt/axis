@@ -294,7 +294,7 @@
         class="preserve-3d relative grid h-[80vh] w-[213vh] grid-cols-[repeat(16,_minmax(0,_1fr))] grid-rows-6 2xl:h-[60vh] 2xl:w-[160vh]"
       >
         <div
-          class="col-span-3 col-start-1 row-span-3 row-start-2 transition duration-500 ease-out transform hover:scale-105"
+          class="col-span-3 col-start-2 row-span-3 row-start-2 transition duration-500 ease-out transform hover:scale-105"
         >
           <img
             class="h-auto"
@@ -316,7 +316,7 @@
         </div>
 
         <div
-          class="col-span-3 col-start-5 row-span-3 row-start-3 transition duration-500 ease-out transform layer-3-no-scale hover:scale-105"
+          class="col-span-3 col-start-6 row-span-3 row-start-3 transition duration-500 ease-out transform layer-3-no-scale hover:scale-105"
         >
           <img
             class="h-auto"
@@ -338,7 +338,7 @@
         </div>
 
         <div
-          class="col-span-3 col-start-9 row-span-3 row-start-1 transition duration-500 ease-out transform hover:scale-105"
+          class="col-span-3 col-start-10 row-span-3 row-start-1 transition duration-500 ease-out transform hover:scale-105"
         >
           <img
             class="h-auto"
