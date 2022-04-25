@@ -1,0 +1,51 @@
+@layer base {
+  @font-face {
+    font-family: "Andale Mono";
+    font-weight: 400;
+    src: url(/resources/fonts/Andale-Mono.woff) format("woff"),
+      url(/resources/fonts/Andale-Mono.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "Karbon";
+    font-weight: 400;
+    src: url(/resources/fonts/Karbon-Medium.woff) format("woff"),
+      url(/resources/fonts/Karbon-Medium.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "Karbon";
+    font-weight: 400;
+    font-style: italic;
+    src: url(/resources/fonts/Karbon-MediumItalic.woff) format("woff"),
+      url(/resources/fonts/Karbon-MediumItalic.woff2) format("woff2");
+  }
+  /* @font-face {
+    font-family: "Benton Sans";
+    font-weight: 400;
+    src: url(/resources/fonts/BentonSans_Regular.woff) format("woff"),
+      url(/resources/fonts/BentonSans_Regular.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "Benton Sans";
+    font-weight: 500;
+    src: url(/resources/fonts/BentonSans_Medium.woff) format("woff"),
+      url(/resources/fonts/BentonSans_Medium.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "Benton Sans";
+    font-weight: 600;
+    src: url(/resources/fonts/BentonSans_Book.woff) format("woff"),
+      url(/resources/fonts/BentonSans_Book.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "Benton Sans";
+    font-weight: 700;
+    src: url(/resources/fonts/BentonSans_Bold.woff) format("woff"),
+      url(/resources/fonts/BentonSans_Bold.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "Benton Sans";
+    font-weight: 800;
+    src: url(/resources/fonts/BentonSans_Black.woff) format("woff"),
+      url(/resources/fonts/BentonSans_Black.woff2) format("woff2");
+  } */
+}

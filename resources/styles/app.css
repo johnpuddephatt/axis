@@ -1,0 +1,68 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "common/global";
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.strikethrough {
+  position: relative;
+}
+.strikethrough::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  bottom: 0.5em;
+  left: -0.25em;
+  right: -0.25em;
+  height: 0.2em;
+  background-color: #fff;
+  transform: translateY(50%);
+}
+
+.perspective {
+  perspective: 1px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.transform {
+  --tw-translate-z: 0px;
+  transform-origin: center center;
+  transform: translate3d(
+      var(--tw-translate-x),
+      var(--tw-translate-y),
+      var(--tw-translate-z)
+    )
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.layer-3 {
+  --tw-translate-z: 0.2px;
+}
+
+.layer-3-no-scale {
+  --tw-translate-z: 0.2px;
+  --tw-scale-x: 0.8;
+  --tw-scale-y: 0.8;
+}
+
+.hover\:scale-105.layer-3-no-scale:hover {
+  --tw-scale-x: 0.85 !important;
+  --tw-scale-y: 0.85 !important;
+}
+
+.layer-2 {
+  --tw-translate-z: 0.1px;
+}
