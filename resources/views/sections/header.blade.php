@@ -1,7 +1,7 @@
 <header class="fixed top-0 left-0 w-full">
   <div class="p-12">
     <a
-      class="inline-block font-mono text-3xl font-bold lowercase strikethrough"
+      class="inline-block font-mono text-3xl tracking-widest lowercase strikethrough"
       href="{{ home_url('/') }}"
     >
       {!! $siteName !!}

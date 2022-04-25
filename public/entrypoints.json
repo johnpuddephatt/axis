@@ -1,15 +1,21 @@
 {
   "app": {
     "js": [
-      "vendor/bud.app.editor.js",
-      "app.js"
+      "runtime.194772.js",
+      "app.f5abda.js"
+    ],
+    "css": [
+      "app.ed5970.css"
     ],
     "dependencies": []
   },
   "editor": {
     "js": [
-      "vendor/bud.app.editor.js",
-      "editor.js"
+      "runtime.194772.js",
+      "editor.76cd8e.js"
+    ],
+    "css": [
+      "editor.bf9448.css"
     ],
     "dependencies": [
       "wp-blocks",

@@ -6,7 +6,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Karbon", "ui-sans-serif", "system-ui"],
-      mono: ["Andale Mono", "ui-monospace", "SFMono-Regular"],
+      mono: ["Inconsolata", "ui-monospace", "SFMono-Regular"],
     },
     extend: {
       colors: {

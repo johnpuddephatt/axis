@@ -1,9 +1,9 @@
 @layer base {
   @font-face {
-    font-family: "Andale Mono";
+    font-family: "Inconsolata";
     font-weight: 400;
-    src: url(/resources/fonts/Andale-Mono.woff) format("woff"),
-      url(/resources/fonts/Andale-Mono.woff2) format("woff2");
+    src: url(/resources/fonts/Inconsolata-ExtraBold.woff) format("woff"),
+      url(/resources/fonts/Inconsolata-ExtraBold.woff2) format("woff2");
   }
   @font-face {
     font-family: "Karbon";
