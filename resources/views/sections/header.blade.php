@@ -1,5 +1,5 @@
 <header class="fixed top-0 left-0 w-full">
-  <div class="p-12">
+  <div class="px-6 py-12 lg:px-12">
     <a
       class="inline-block font-mono text-3xl tracking-widest lowercase strikethrough"
       href="{{ home_url('/') }}"

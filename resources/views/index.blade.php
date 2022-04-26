@@ -80,7 +80,7 @@
 
 <div class="flex flex-row preserve-3d" data-bg="bg-axis-yellow">
   <div
-    class="flex flex-col items-start justify-center h-screen gap-12 p-12 lg:w-2/5 lg:pr-24"
+    class="flex flex-col items-start justify-center h-screen gap-12 p-6 lg:w-2/5 lg:p-12 lg:pr-24"
   >
     <h1 class="text-4xl italic font-bold uppercase lg:text-6xl 2xl:text-8xl">
       We support artists & elevate artists’ voices
@@ -136,9 +136,9 @@
 
 <div class="flex flex-row section-two preserve-3d" data-bg="bg-axis-purple">
   <div
-    class="flex flex-col items-start justify-center h-screen gap-12 p-12 lg:w-2/5 lg:pr-24"
+    class="flex flex-col items-start justify-center h-screen gap-12 p-6 lg:w-2/5 lg:p-12 lg:pr-24"
   >
-    <h1 class="text-6xl italic font-bold uppercase 2xl:text-8xl">
+    <h1 class="text-4xl italic font-bold uppercase lg:text-6xl 2xl:text-8xl">
       We deliver projects that connect &amp; support artists
     </h1>
     <a
@@ -225,9 +225,9 @@
 </div>
 <div class="flex flex-row section-two preserve-3d" data-bg="bg-axis-cream">
   <div
-    class="flex flex-col items-start justify-center h-screen gap-8 p-12 lg:w-2/5 lg:pr-24"
+    class="flex flex-col items-start justify-center h-screen gap-8 p-6 lg:w-2/5 lg:p-12 lg:pr-24"
   >
-    <h1 class="text-6xl italic font-bold uppercase 2xl:text-8xl">
+    <h1 class="text-4xl italic font-bold uppercase lg:text-6xl 2xl:text-8xl">
       We provide space where artists connect
     </h1>
     <a
@@ -280,9 +280,9 @@
 
 <div class="flex flex-row section-two preserve-3d" data-bg="bg-axis-blue">
   <div
-    class="flex flex-col items-start justify-center h-screen gap-8 p-12 lg:w-2/5 lg:pr-24"
+    class="flex flex-col items-start justify-center h-screen gap-8 p-6 lg:w-2/5 lg:p-12 lg:pr-24"
   >
-    <h1 class="text-6xl italic font-bold uppercase 2xl:text-8xl">
+    <h1 class="text-4xl italic font-bold uppercase lg:text-6xl 2xl:text-8xl">
       We bring you the latest news &amp; opinion in art.
     </h1>
     <a
