@@ -82,7 +82,7 @@
   <div
     class="flex flex-col items-start justify-center h-screen gap-12 p-12 lg:w-2/5 lg:pr-24"
   >
-    <h1 class="text-6xl italic font-bold uppercase 2xl:text-8xl">
+    <h1 class="text-4xl italic font-bold uppercase lg:text-6xl 2xl:text-8xl">
       We support artists & elevate artists’ voices
     </h1>
   </div>
