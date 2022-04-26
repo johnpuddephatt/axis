@@ -80,7 +80,7 @@
 
 <div class="flex flex-row preserve-3d" data-bg="bg-axis-yellow">
   <div
-    class="flex flex-col items-start justify-center flex-shrink-0 h-screen gap-12 p-12 pr-24 lg:w-2/5"
+    class="flex flex-col items-start justify-center h-screen gap-12 p-12 lg:w-2/5 lg:pr-24"
   >
     <h1 class="text-6xl italic font-bold uppercase 2xl:text-8xl">
       We support artists & elevate artists’ voices
@@ -136,7 +136,7 @@
 
 <div class="flex flex-row section-two preserve-3d" data-bg="bg-axis-purple">
   <div
-    class="flex flex-col items-start justify-center h-screen gap-12 p-12 pr-24 lg:w-2/5"
+    class="flex flex-col items-start justify-center h-screen gap-12 p-12 lg:w-2/5 lg:pr-24"
   >
     <h1 class="text-6xl italic font-bold uppercase 2xl:text-8xl">
       We deliver projects that connect &amp; support artists
@@ -225,7 +225,7 @@
 </div>
 <div class="flex flex-row section-two preserve-3d" data-bg="bg-axis-cream">
   <div
-    class="flex flex-col items-start justify-center h-screen gap-8 p-12 pr-24 lg:w-2/5"
+    class="flex flex-col items-start justify-center h-screen gap-8 p-12 lg:w-2/5 lg:pr-24"
   >
     <h1 class="text-6xl italic font-bold uppercase 2xl:text-8xl">
       We provide space where artists connect
@@ -243,31 +243,36 @@
       <div
         class="preserve-3d relative grid h-[80vh] w-[213vh] grid-cols-[repeat(16,_minmax(0,_1fr))] grid-rows-6 2xl:h-[60vh] 2xl:w-[160vh]"
       >
-        <img
-          class="block col-span-4 col-start-1 row-start-2 transform layer-2"
-          src="@asset('images/sample-images/image-16.jpg')"
-          alt=""
-        />
-        <img
-          class="block col-span-2 col-start-8 row-start-1 transform layer-3"
-          src="@asset('images/sample-images/image-7.jpg')"
-          alt=""
-        />
-        <img
-          class="col-span-3 col-start-9 row-start-4 transform layer-2"
-          src="@asset('images/sample-images/image-6.jpg')"
-          alt=""
-        />
-        <img
-          class="col-span-3 col-start-4 row-start-5 transform layer-2"
-          src="@asset('images/sample-images/image-9.jpg')"
-          alt=""
-        />
-        <img
-          class="col-span-2 col-start-6 row-start-2"
-          src="@asset('images/sample-images/image-28.jpg')"
-          alt=""
-        />
+        <a
+          href="#"
+          class="block col-span-4 col-start-1 row-start-2 transition duration-500 ease-out transform layer-2 hover:scale-105"
+        >
+          <img src="@asset('images/sample-images/image-16.jpg')" alt="" />
+        </a>
+        <a
+          href="#"
+          class="block col-span-2 col-start-8 row-start-1 transition duration-500 ease-out transform layer-3 hover:scale-105"
+        >
+          <img src="@asset('images/sample-images/image-7.jpg')" alt="" />
+        </a>
+        <a
+          href="#"
+          class="col-span-3 col-start-9 row-start-4 transition duration-500 ease-out transform layer-2 hover:scale-105"
+        >
+          <img src="@asset('images/sample-images/image-6.jpg')" alt=""
+        /></a>
+        <a
+          href="#"
+          class="col-span-3 col-start-4 row-start-5 transition duration-500 ease-out transform layer-2 hover:scale-105"
+        >
+          <img src="@asset('images/sample-images/image-9.jpg')" alt="" />
+        </a>
+        <a
+          href="#"
+          class="col-span-2 col-start-6 row-start-2 transition duration-500 ease-out transform hover:scale-105"
+        >
+          <img src="@asset('images/sample-images/image-28.jpg')" alt=""
+        /></a>
       </div>
     </div>
   </div>
@@ -275,7 +280,7 @@
 
 <div class="flex flex-row section-two preserve-3d" data-bg="bg-axis-blue">
   <div
-    class="flex flex-col items-start justify-center h-screen gap-8 p-12 pr-24 lg:w-2/5"
+    class="flex flex-col items-start justify-center h-screen gap-8 p-12 lg:w-2/5 lg:pr-24"
   >
     <h1 class="text-6xl italic font-bold uppercase 2xl:text-8xl">
       We bring you the latest news &amp; opinion in art.
