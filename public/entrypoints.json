@@ -5,17 +5,17 @@
       "app.f5abda.js"
     ],
     "css": [
-      "app.eb8ce4.css"
+      "app.4613fa.css"
     ],
     "dependencies": []
   },
   "editor": {
     "js": [
       "runtime.194772.js",
-      "editor.76cd8e.js"
+      "editor.89de5e.js"
     ],
     "css": [
-      "editor.9ae4a2.css"
+      "editor.32ee76.css"
     ],
     "dependencies": [
       "wp-blocks",

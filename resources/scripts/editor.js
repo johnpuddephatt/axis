@@ -11,11 +11,10 @@ const main = (err) => {
     console.error(err);
   }
 
-  unregisterBlockStyle("core/button", "outline");
+  window._wpLoadBlockEditor.then(() => {
+    unregisterBlockStyle("core/image", ["rounded"]);
 
-  registerBlockStyle("core/button", {
-    name: "outline",
-    label: "Outline",
+    // Register blocks in App/block_styles as CSS can be autoloaded from there.
   });
 };
 

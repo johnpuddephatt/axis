@@ -1,8 +1,8 @@
 {
-  "app.css": "app.eb8ce4.css",
+  "app.css": "app.4613fa.css",
   "app.js": "app.f5abda.js",
-  "editor.css": "editor.9ae4a2.css",
-  "editor.js": "editor.76cd8e.js",
+  "editor.css": "editor.32ee76.css",
+  "editor.js": "editor.89de5e.js",
   "runtime.js": "runtime.194772.js",
   "images/sample-images/image-26.jpg": "images/sample-images/image-26.jpg",
   "images/sample-images/image-25.jpg": "images/sample-images/image-25.jpg",
@@ -40,5 +40,7 @@
   "fonts/Karbon-Medium.woff": "fonts/Karbon-Medium.694dba.woff",
   "fonts/Karbon-MediumItalic.woff2": "fonts/Karbon-MediumItalic.2c7869.woff2",
   "images/sample-images/image-27.jpg": "images/sample-images/image-27.jpg",
-  "fonts/Karbon-Medium.woff2": "fonts/Karbon-Medium.7e3701.woff2"
+  "fonts/Karbon-Medium.woff2": "fonts/Karbon-Medium.7e3701.woff2",
+  "fonts/Karbon-Regular.woff": "fonts/Karbon-Regular.5fd43d.woff",
+  "fonts/Karbon-Regular.woff2": "fonts/Karbon-Regular.756c6f.woff2"
 }

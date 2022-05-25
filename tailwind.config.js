@@ -1,5 +1,10 @@
 module.exports = {
-  content: ["./index.php", "./app/**/*.php", "./resources/**/*.{php,vue,js}"],
+  content: [
+    "./index.php",
+    "./app/**/*.php",
+    "./resources/**/*.{php,vue,js}",
+    "./safelist.txt",
+  ],
   theme: {
     container: {
       center: true,
@@ -42,5 +47,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

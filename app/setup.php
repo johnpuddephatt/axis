@@ -8,6 +8,8 @@ namespace App;
 
 use function Roots\bundle;
 
+add_post_type_support("page", "excerpt");
+
 /**
  * Register the theme assets.
  *
@@ -92,7 +94,6 @@ add_action(
          * Enable wide alignment support.
          * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/#wide-alignment
          */
-        add_theme_support("align-wide");
 
         /**
          * Enable responsive embed support.
@@ -136,17 +137,17 @@ add_action("widgets_init", function () {
         "after_title" => "</h3>",
     ];
 
-    register_sidebar(
-        [
-            "name" => __("Primary", "sage"),
-            "id" => "sidebar-primary",
-        ] + $config
-    );
+    // register_sidebar(
+    //     [
+    //         "name" => __("Primary", "sage"),
+    //         "id" => "sidebar-primary",
+    //     ] + $config
+    // );
 
-    register_sidebar(
-        [
-            "name" => __("Footer", "sage"),
-            "id" => "sidebar-footer",
-        ] + $config
-    );
+    // register_sidebar(
+    //     [
+    //         "name" => __("Footer", "sage"),
+    //         "id" => "sidebar-footer",
+    //     ] + $config
+    // );
 });

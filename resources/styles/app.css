@@ -4,6 +4,76 @@
 
 @import "common/global";
 
+:root {
+  --contentgutter: 1rem;
+  --contentwidth: 0;
+  --containerwidth: 100vw;
+}
+@media (min-width: 640px) {
+  :root {
+    --contentgutter: 0rem;
+    --containerwidth: 640px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --containerwidth: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --containerwidth: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  :root {
+    --contentgutter: 8rem;
+    --contentwidth: 2/5;
+    --containerwidth: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  :root {
+    --containerwidth: 1536px;
+  }
+}
+
+.wp-block-gallery {
+  margin-top: calc(4 * var(--gallery-block--gutter-size, 16px));
+  margin-bottom: calc(3 * var(--gallery-block--gutter-size, 16px));
+}
+
+figure {
+  position: relative;
+}
+
+figcaption {
+  text-align: center;
+  margin: 0 var(--gallery-block--gutter-size, 16px);
+}
+
+.alignwide {
+  margin: 4em calc(-1 * var(--contentgutter)) 4em
+    calc(-1 * var(--contentgutter));
+}
+
+.alignfull {
+  margin: 4em calc(-1 * var(--contentgutter)) 4em
+    calc(var(--contentgutter) * -1.015 - var(--contentwidth) * 100vw);
+}
+
+@media (min-width: 1280px) {
+  .alignfull figcaption {
+    margin-left: 40%;
+  }
+
+  .wp-block-gallery.alignwide,
+  .wp-block-gallery.alignfull {
+    padding-left: calc(2 * var(--gallery-block--gutter-size, 16px));
+    padding-right: calc(2 * var(--gallery-block--gutter-size, 16px));
+  }
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -17,16 +87,21 @@
   position: relative;
   z-index: 2;
 }
+
 .strikethrough::before {
   content: "";
   z-index: -1;
   position: absolute;
-  bottom: 0.5em;
+  bottom: 0.475em;
   left: -0.25em;
   right: -0.25em;
-  height: 0.2em;
+  height: 0.15em;
   background-color: #fff;
   transform: translateY(50%);
+}
+
+.strikethrough.strikethrough-yellow::before {
+  background-color: #ecf770;
 }
 
 .perspective {

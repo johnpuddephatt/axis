@@ -17,6 +17,12 @@
   "devDependencies": {
     "@roots/bud": "5.5.0",
     "@roots/bud-tailwindcss": "5.5.0",
-    "@roots/sage": "5.5.0"
+    "@roots/sage": "5.5.0",
+    "@shufo/prettier-plugin-blade": "^1.3.5",
+    "@tailwindcss/typography": "^0.5.2",
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "@ryangjchandler/prettier-plugin-blade": "github:ryangjchandler/prettier-plugin-blade"
   }
 }

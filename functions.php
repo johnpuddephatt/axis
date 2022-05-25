@@ -11,8 +11,13 @@
 |
 */
 
-if (! file_exists($composer = __DIR__ . '/vendor/autoload.php')) {
-    wp_die(__('Error locating autoloader. Please run <code>composer install</code>.', 'sage'));
+if (!file_exists($composer = __DIR__ . "/vendor/autoload.php")) {
+    wp_die(
+        __(
+            "Error locating autoloader. Please run <code>composer install</code>.",
+            "sage"
+        )
+    );
 }
 
 require $composer;
@@ -32,14 +37,10 @@ require $composer;
 try {
     \Roots\bootloader();
 } catch (Throwable $e) {
-    wp_die(
-        __('You need to install Acorn to use this theme.', 'sage'),
-        '',
-        [
-            'link_url' => 'https://docs.roots.io/acorn/2.x/installation/',
-            'link_text' => __('Acorn Docs: Installation', 'sage'),
-        ]
-    );
+    wp_die(__("You need to install Acorn to use this theme.", "sage"), "", [
+        "link_url" => "https://docs.roots.io/acorn/2.x/installation/",
+        "link_text" => __("Acorn Docs: Installation", "sage"),
+    ]);
 }
 
 /*
@@ -54,15 +55,17 @@ try {
 |
 */
 
-collect(['setup', 'filters'])
-    ->each(function ($file) {
-        if (! locate_template($file = "app/{$file}.php", true, true)) {
-            wp_die(
-                /* translators: %s is replaced with the relative file path */
-                sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file)
-            );
-        }
-    });
+collect(["setup", "filters", "images", "block_styles"])->each(function ($file) {
+    if (!locate_template($file = "app/{$file}.php", true, true)) {
+        wp_die(
+            /* translators: %s is replaced with the relative file path */
+            sprintf(
+                __("Error locating <code>%s</code> for inclusion.", "sage"),
+                $file
+            )
+        );
+    }
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -76,4 +79,4 @@ collect(['setup', 'filters'])
 |
 */
 
-add_theme_support('sage');
+add_theme_support("sage");

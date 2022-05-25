@@ -1,24 +1,22 @@
-<header class="fixed top-0 left-0 w-full">
-  <div class="px-6 py-12 lg:px-12">
-    <a
-      class="inline-block font-mono text-3xl tracking-widest lowercase strikethrough"
-      href="{{ home_url('/') }}"
-    >
-      {!! $siteName !!}
-    </a>
+<header class="">
+  <div class="flex">
+    <div class="py-4 pl-12 lg:w-2/5"> <a
+        class="strikethrough inline-block font-mono text-4xl lowercase tracking-widest {{ $strikethrough }}"
+        href="{{ home_url('/') }}">
+        {!! $siteName !!}
+      </a>
+    </div>
 
-    @if(has_nav_menu('primary_navigation'))
+    @if (!empty($primaryNavigation))
+      <nav class="pr-12 py-8 hidden xl:block text-lg font-bold lg:w-3/5 bg-white"
+        aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
+        {!! $primaryNavigation !!}
+      </nav>
 
-
-    <nav
-      class="nav-primary"
-      aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}"
-    >
-      {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' =>
-      'nav', 'echo' => false]) !!}
-    </nav>
-
-
-@endif
+      <button id="main-menu-button"
+        class="hidden relative z-50 px-4 py-2 ml-auto font-semibold bg-white border-2 rounded text-blue border-blue">
+        Menu
+      </button>
+    @endif
   </div>
 </header>

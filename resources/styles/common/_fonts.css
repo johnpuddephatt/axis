@@ -8,12 +8,18 @@
   @font-face {
     font-family: "Karbon";
     font-weight: 400;
+    src: url(/resources/fonts/Karbon-Regular.woff) format("woff"),
+      url(/resources/fonts/Karbon-Regular.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "Karbon";
+    font-weight: 700;
     src: url(/resources/fonts/Karbon-Medium.woff) format("woff"),
       url(/resources/fonts/Karbon-Medium.woff2) format("woff2");
   }
   @font-face {
     font-family: "Karbon";
-    font-weight: 400;
+    font-weight: 700;
     font-style: italic;
     src: url(/resources/fonts/Karbon-MediumItalic.woff) format("woff"),
       url(/resources/fonts/Karbon-MediumItalic.woff2) format("woff2");

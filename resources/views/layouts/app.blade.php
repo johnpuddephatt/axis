@@ -1,9 +1,13 @@
-<a class="sr-only focus:not-sr-only" href="#main">
+<a class="sr-only block  !py-6 text-center focus:not-sr-only bg-white" href="#main">
   {{ __('Skip to content') }}
 </a>
 
-@include('sections.header')
+<div class="wrapper {{ $background ?? null }}">
 
-<main id="main" class="w-full overflow-x-hidden main">@yield('content')</main>
+  @include('sections.header', ['strikethrough' => $strikethrough ?? 'strikethrough-yellow'])
 
-@include('sections.footer')
+  <main id="main" class="main w-full overflow-x-hidden">@yield('content')</main>
+
+  @include('sections.footer')
+
+</div>
