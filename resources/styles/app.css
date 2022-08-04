@@ -5,40 +5,48 @@
 @import "common/global";
 
 :root {
-  --contentgutter: 1rem;
-  --contentwidth: 0;
+  --contentgutter: 1.5rem;
+  --sidebarwidth: 0;
   --containerwidth: 100vw;
 }
 @media (min-width: 640px) {
+  /* SM */
   :root {
-    --contentgutter: 0rem;
     --containerwidth: 640px;
   }
 }
 @media (min-width: 768px) {
+  /* MD */
   :root {
     --containerwidth: 768px;
   }
 }
 @media (min-width: 1024px) {
+  /* LG */
   :root {
+    --contentgutter: 4rem;
     --containerwidth: 1024px;
   }
 }
 @media (min-width: 1280px) {
+  /* XL */
   :root {
+    --sidebarwidth: 2/5;
+
     --contentgutter: 8rem;
-    --contentwidth: 2/5;
     --containerwidth: 1280px;
   }
 }
 @media (min-width: 1536px) {
+  /* 2XL */
   :root {
     --containerwidth: 1536px;
   }
 }
 
 .wp-block-gallery {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: calc(4 * var(--gallery-block--gutter-size, 16px));
   margin-bottom: calc(3 * var(--gallery-block--gutter-size, 16px));
 }
@@ -47,31 +55,86 @@ figure {
   position: relative;
 }
 
-figcaption {
-  text-align: center;
-  margin: 0 var(--gallery-block--gutter-size, 16px);
+figure figcaption {
+  margin: 0;
+  color: black !important;
+  text-align: left !important;
+  margin-top: 2rem !important;
+  padding-left: 0.5rem;
+  position: relative;
+  @apply font-mono antialiased;
+}
+
+figure figcaption::before {
+  display: block;
+  content: "";
+  width: 1px;
+  background-color: lightgray;
+  position: absolute;
+  left: 0;
+  bottom: 0.35em;
+  height: 5.5rem;
 }
 
 .alignwide {
-  margin: 4em calc(-1 * var(--contentgutter)) 4em
-    calc(-1 * var(--contentgutter));
+  margin: var(--contentgutter)
+    clamp(
+      -999px,
+      calc(
+        -1 * var(--contentgutter) - ((1 - var(--sidebarwidth)) * 100vw - 65ch -
+              2 * var(--contentgutter))
+      ),
+      calc(-1 * var(--contentgutter))
+    )
+    var(--contentgutter) calc(-1 * var(--contentgutter)) !important;
 }
 
 .alignfull {
-  margin: 4em calc(-1 * var(--contentgutter)) 4em
-    calc(var(--contentgutter) * -1.015 - var(--contentwidth) * 100vw);
+  margin: calc(1 * var(--contentgutter))
+    clamp(
+      -999px,
+      calc(
+        0px -
+          ((1 - var(--sidebarwidth)) * 100vw - 65ch - 2 * var(--contentgutter))
+      ),
+      calc(-1.5 * var(--contentgutter))
+    )
+    calc(1 * var(--contentgutter))
+    clamp(
+      -999px,
+      calc(var(--sidebarwidth) * -100vw),
+      calc(-1 * var(--contentgutter))
+    ) !important;
 }
 
-@media (min-width: 1280px) {
-  .alignfull figcaption {
-    margin-left: 40%;
-  }
+.alignwide figcaption {
+  margin-top: 4rem !important;
+  margin-left: var(--contentgutter) !important;
+}
 
-  .wp-block-gallery.alignwide,
-  .wp-block-gallery.alignfull {
-    padding-left: calc(2 * var(--gallery-block--gutter-size, 16px));
-    padding-right: calc(2 * var(--gallery-block--gutter-size, 16px));
-  }
+.alignfull figcaption {
+  margin-top: 4rem !important;
+  margin-left: calc(var(--sidebarwidth) * 100vw) !important;
+}
+
+/* .alignfull {
+    padding-right: var(--contentgutter);
+    padding-left: var(--contentgutter);
+  } */
+
+.wp-block-gallery.alignwide {
+  padding-left: calc(2 * var(--gallery-block--gutter-size, 16px));
+  padding-right: calc(2 * var(--gallery-block--gutter-size, 16px));
+}
+
+.wp-block-gallery.alignwide figcaption {
+  margin-left: calc(
+    var(--contentgutter) - 2 * var(--gallery-block--gutter-size, 16px)
+  ) !important;
+}
+
+.wp-block-gallery.alignwide figcaption {
+  margin-left: calc(-2 * var(--gallery-block--gutter-size, 16px));
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -92,14 +155,13 @@ figcaption {
   content: "";
   z-index: -1;
   position: absolute;
-  bottom: 0.475em;
+  top: 57.5%;
   left: -0.25em;
-  right: -0.25em;
-  height: 0.15em;
+  right: 0.15em;
+  height: 0.175em;
   background-color: #fff;
-  transform: translateY(50%);
+  transform: translateY(-50%);
 }
-
 .strikethrough.strikethrough-yellow::before {
   background-color: #ecf770;
 }
@@ -152,4 +214,16 @@ figcaption {
 .hover\:scale-105.layer-2-no-scale:hover {
   --tw-scale-x: 0.95 !important;
   --tw-scale-y: 0.95 !important;
+}
+
+.join-button a {
+  @apply border-2 border-axis-cream bg-axis-cream px-6 py-2;
+}
+
+.login-button a {
+  @apply border-2  border-axis-cream px-6 py-2 xl:ml-2;
+}
+
+.ez-toc-link {
+  @apply mb-1 block border-b border-white py-2 font-mono lg:mb-2 lg:py-3 lg:text-lg 2xl:text-xl;
 }

@@ -11,7 +11,7 @@ class Page extends Composer
      *
      * @var array
      */
-    protected static $views = ["page", "template-section"];
+    protected static $views = ["page", "template-section", "template-join"];
 
     /**
      * Data to be passed to view before rendering, but after merging.
@@ -22,6 +22,10 @@ class Page extends Composer
     {
         return [
             "title" => get_the_title(),
+            "excerpt" => get_the_excerpt(),
+            "thumbnail" => get_the_post_thumbnail(null, "2by1", [
+                "class" => "",
+            ]),
             "children" => $this->children(),
             "siblings" => $this->siblings(),
             "parent" => $this->parent(),

@@ -11,9 +11,7 @@ class App extends Composer
      *
      * @var array
      */
-    protected static $views = [
-        '*',
-    ];
+    protected static $views = ["*"];
 
     /**
      * Data to be passed to view before rendering.
@@ -23,7 +21,7 @@ class App extends Composer
     public function with()
     {
         return [
-            'siteName' => $this->siteName(),
+            "siteName" => $this->siteName(),
         ];
     }
 
@@ -34,6 +32,6 @@ class App extends Composer
      */
     public function siteName()
     {
-        return get_bloginfo('name', 'display');
+        return get_bloginfo("name", "display");
     }
 }

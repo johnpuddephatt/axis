@@ -11,11 +11,13 @@ const main = (err) => {
     console.error(err);
   }
 
-  window._wpLoadBlockEditor.then(() => {
-    unregisterBlockStyle("core/image", ["rounded"]);
+  if (window._wpLoadBlockEditor) {
+    window._wpLoadBlockEditor.then(() => {
+      unregisterBlockStyle("core/image", ["rounded"]);
 
-    // Register blocks in App/block_styles as CSS can be autoloaded from there.
-  });
+      // Register blocks in App/block_styles as CSS can be autoloaded from there.
+    });
+  }
 };
 
 /**

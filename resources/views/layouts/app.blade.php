@@ -1,3 +1,4 @@
+
 <a class="sr-only block  !py-6 text-center focus:not-sr-only bg-white" href="#main">
   {{ __('Skip to content') }}
 </a>

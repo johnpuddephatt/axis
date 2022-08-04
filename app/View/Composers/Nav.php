@@ -25,24 +25,27 @@ class Nav extends Composer
                 "primaryNavigation" => $this->navigation(
                     "primary_navigation",
                     [
-                        "menu_class" => "flex flex-col md:flex-row justify-end",
+                        "menu_class" =>
+                            "flex flex-col gap-8 xl:gap-0 xl:items-center xl:flex-row justify-end",
                     ],
                     [
-                        "level-0-link" => "px-4 ",
+                        "level-0-link" =>
+                            "inline-block  px-2 xl:px-3 2xl:px-4  hover:strikethrough strikethrough-yellow",
                         "level-1-link" => "text-sm",
                     ]
                 ),
             ];
         } else {
             return [
-                "primaryNavigationFooter" => $this->navigation(
-                    "primary_navigation",
+                "footerNavigation" => $this->navigation(
+                    "footer_navigation",
                     [
                         "depth" => 1,
-                        "menu_class" => "flex flex-col",
+                        "menu_class" =>
+                            "ml-0 pl-0 flex flex-row gap-4 list-none 2xl:text-lg",
                     ],
                     [
-                        "level-0-link" => "hover:border-sky",
+                        "level-0-link" => "no-underline",
                     ]
                 ),
             ];

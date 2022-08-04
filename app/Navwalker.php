@@ -69,6 +69,7 @@ class Navwalker extends \Walker_Nav_Menu
             )
         );
         if ($depth == 0) {
+            $class_names .= " ";
             $class_names .= $this->styles["toplevel_li"];
         }
         $class_names = $class_names

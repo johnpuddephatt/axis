@@ -69,7 +69,8 @@ add_action(
          * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
          */
         register_nav_menus([
-            "primary_navigation" => __("Primary Navigation", "sage"),
+            "primary_navigation" => __("Main Navigation", "sage"),
+            "footer_navigation" => __("Footer Navigation", "sage"),
         ]);
 
         /**
@@ -119,7 +120,7 @@ add_action(
          * Enable selective refresh for widgets in customizer.
          * @link https://developer.wordpress.org/themes/advanced-topics/customizer-api/#theme-support-in-sidebars
          */
-        add_theme_support("customize-selective-refresh-widgets");
+        // add_theme_support("customize-selective-refresh-widgets");
     },
     20
 );
@@ -151,3 +152,16 @@ add_action("widgets_init", function () {
     //     ] + $config
     // );
 });
+
+// add_action("pre_get_posts", function ($query) {
+//     if (isset($_GET["projects"]) && $query->is_main_query() && !is_admin()) {
+
+//         dd($my_project[0]->ID);
+
+//         if ($my_project) {
+//             $query->set("meta_key", "project");
+//             $query->set("meta_compare", "LIKE");
+//             $query->set("meta_value", '"' . $my_project[0]->ID . '"');
+//         }
+//     }
+// });

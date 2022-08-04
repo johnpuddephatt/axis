@@ -12,21 +12,22 @@ return [
     */
 
     "post" => [
-        "book" => [
-            "enter_title_here" => "Enter book title",
-            "menu_icon" => "dashicons-book-alt",
+        "project" => [
+            "enter_title_here" => "Enter project title",
+            "menu_icon" => "dashicons-groups",
             "supports" => [
                 "title",
                 "editor",
                 "author",
                 "revisions",
                 "thumbnail",
+                "excerpt",
             ],
             "show_in_rest" => true,
             "has_archive" => false,
             "labels" => [
-                "singular" => "Book",
-                "plural" => "Books",
+                "singular" => "Project",
+                "plural" => "Projects",
             ],
         ],
     ],
@@ -42,10 +43,10 @@ return [
     */
 
     "taxonomy" => [
-        "genre" => [
-            "links" => ["book"],
-            "meta_box" => "radio",
-        ],
+        // "genre" => [
+        //     "links" => ["book"],
+        //     "meta_box" => "radio",
+        // ],
     ],
 
     /*

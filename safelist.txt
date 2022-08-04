@@ -1,2 +1,9 @@
 border-axis-cream
 rounded
+delay-100
+delay-200
+delay-300
+delay-400
+delay-500
+delay-600
+delay-700

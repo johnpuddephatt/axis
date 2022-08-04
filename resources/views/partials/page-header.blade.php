@@ -2,7 +2,7 @@
   <div class="container my-24 flex flex-row">
     <div class="w-7/12 relative">
       {!! get_the_post_thumbnail(null, 'square-s', ['class' => '']) !!}
-      @include('partials.image-tag', ['thumbnail_id' => get_post_thumbnail_id()])
+      @include('partials.image-tag', ['thumbnail_id' => get_post_thumbnail_id($post->ID)])
     </div>
 
     <div class="p-24">

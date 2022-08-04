@@ -2,20 +2,20 @@
   "app": {
     "js": [
       "runtime.194772.js",
-      "app.f5abda.js"
+      "app.224375.js"
     ],
     "css": [
-      "app.4613fa.css"
+      "app.ee5ea8.css"
     ],
     "dependencies": []
   },
   "editor": {
     "js": [
       "runtime.194772.js",
-      "editor.89de5e.js"
+      "editor.f218c4.js"
     ],
     "css": [
-      "editor.32ee76.css"
+      "editor.bd9d05.css"
     ],
     "dependencies": [
       "wp-blocks",

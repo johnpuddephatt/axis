@@ -14,6 +14,10 @@ module.exports = {
       mono: ["Inconsolata", "ui-monospace", "SFMono-Regular"],
     },
     extend: {
+      transitionDelay: {
+        400: "400ms",
+        600: "600ms",
+      },
       colors: {
         "axis-green": {
           DEFAULT: "#449878",

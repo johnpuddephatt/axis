@@ -21,15 +21,5 @@ add_filter("excerpt_more", function () {
 
 add_filter("body_class", function ($classes) {
     $classes = array_merge($classes, ["font-sans"]);
-
-    if (is_home()) {
-        $classes = array_merge($classes, [
-            "transition-colors",
-            "duration-1000",
-            "bg-axis-yellow",
-        ]);
-    }
     return $classes;
-
-    //
 });

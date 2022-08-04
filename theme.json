@@ -19,19 +19,25 @@
       "defaultPalette": false,
       "defaultGradients": false
     },
-    "custom": {
-      "spacing": {},
-      "typography": {
-        "font-size": {},
-        "line-height": {}
-      }
-    },
+
     "spacing": {
-      "padding": true,
+      "padding": false,
       "units": ["px", "%", "em", "rem", "vw", "vh"]
     },
     "typography": {
-      "customFontSize": false
+      "customFontSize": false,
+      "fontSizes": [
+        {
+          "slug": "normal",
+          "size": "1em",
+          "name": "Normal"
+        },
+        {
+          "slug": "large",
+          "size": "1.5em",
+          "name": "Large"
+        }
+      ]
     }
   }
 }
