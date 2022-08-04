@@ -26,6 +26,7 @@ add_action("carbon_fields_register_fields", function () {
             Field::make("text", "instagram", __("Instagram Link")),
             Field::make("text", "linkedin", __("LinkedIn Link")),
             Field::make("text", "youtube", __("YouTube Link")),
+            Field::make("text", "vimeo", __("Vimeo Link")),
         ]);
 });
 

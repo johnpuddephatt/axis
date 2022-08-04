@@ -24,7 +24,7 @@
     @endif
 
   <div class="flex flex-row gap-2 mt-4">
-    @foreach(['facebook','twitter','youtube','instagram','linkedin'] as $account)
+    @foreach(['facebook','twitter','youtube','instagram','linkedin', 'vimeo'] as $account)
       @if(get_option('_' . $account))
         <a
             rel="noopener"
@@ -43,5 +43,5 @@
 
 @include('sections.header', ['footer' => true, 'strikethrough' => ''])
 
-<p class="2xl:text-lg">&copy; {!! $siteName !!} {{ date("Y") }}&nbsp; All Rights Reserved &nbsp;|&nbsp;  @if(get_option('_charitynumber')) Registered Charity Number {{ get_option('_charitynumber') }} @endif</p>
+<p class="2xl:text-lg">&copy; {!! $siteName !!} {{ date("Y") }}&nbsp; All Rights Reserved @if(get_option('_charitynumber')) &nbsp;|&nbsp; Registered Charity Number {{ get_option('_charitynumber') }} @endif</p>
 </footer>
