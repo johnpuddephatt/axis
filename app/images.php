@@ -59,3 +59,13 @@ add_image_size("square-l", 960, 960, true);
 add_image_size("square", 800, 800, true);
 add_image_size("square-s", 640, 640, true);
 add_image_size("square-xs", 320, 320, true);
+
+add_filter("image_size_names_choose", function ($default_sizes) {
+    return array_merge($default_sizes, [
+        "square" => __("Square"),
+        "4by3" => __("4:3"),
+        "16by9" => __("16:9"),
+        "2by1" => __("2:1"),
+        "3by1" => __("3:1"),
+    ]);
+});
