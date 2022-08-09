@@ -21,7 +21,7 @@ return [
                 "author",
                 "revisions",
                 "thumbnail",
-                // "excerpt",
+                "excerpt",
             ],
             "show_in_rest" => true,
             "has_archive" => false,
