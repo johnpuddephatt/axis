@@ -30,7 +30,7 @@ class Nav extends Composer
                     ],
                     [
                         "level-0-link" =>
-                            "inline-block  px-2 xl:px-3 2xl:px-4  hover:strikethrough strikethrough-yellow",
+                            "inline-block  px-2 xl:px-4 2xl:px-6  hover:strikethrough strikethrough-yellow",
                         "level-1-link" => "text-sm",
                     ]
                 ),
