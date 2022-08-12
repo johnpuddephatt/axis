@@ -6,10 +6,10 @@
       <div class="text-3xl 2xl:text-4xl max-w-xs">{{ $post->post_excerpt }}</div>
     </div>
     <nav class="max-w-xs xl:-mt-12 mb-24">
-      <p class="ez-toc-link"><a href="#project-overview">Overview</a></p>
+      <p><a class="ez-toc-link" href="#project-overview">Overview</a></p>
       {!! do_shortcode('[toc]') !!}
       @if($posts)
-      <p class="ez-toc-link"><a href="#project-posts">Updates</a></p>
+      <p><a class="ez-toc-link" href="#project-posts">Updates</a></p>
       @endif 
     </nav>
   </header>
@@ -44,7 +44,7 @@
           </a>
           <div class="w-1/2">
             <h3 class="mb-6 text-3xl 2xl:text-4xl font-semibold font-sans">{{ $related_post->post_title }}</h3>
-             <p class="text-xl font-mono">
+             <p class="text-lg 2xl:text-xl font-mono text-neutral-500">
               {{ get_the_date('', $related_post->ID) }}</p>
             <p class="font-medium">
               {{ $related_post->post_excerpt }}

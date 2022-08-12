@@ -40,7 +40,7 @@
             <div class="-mt-16">
               <span class="antialiased font-semibold transform transition duration-500 ease-out  group-hover:translate-y-2 mb-8 -ml-12 inline-block rounded-r-full bg-axis-yellow px-12 py-4">Read more</span>
               <h3 class="mb-2 text-3xl 2xl:text-4xl font-bold">{{ $post->post_title }}</h3>
-              <p class="text-xl font-mono">
+              <p class="text-lg 2xl:text-xl font-mono text-neutral-500">
               {{ get_the_date('', $post->ID) }}</p>
             </div>
             </a>

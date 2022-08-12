@@ -1,6 +1,6 @@
 @if (get_field('artist_name', $thumbnail_id))
   <a aria-label="Find out more about this artist" href="{{ get_field('artist_link', $thumbnail_id) }}"
-    class="{{ ($position ?? 'right') == 'left' ? 'left-0' : 'left-[calc(100%-2.75rem)]' }} pointer-events-none absolute top-0 flex flex-row items-center group no-underline">
+    class="{{ ($position ?? 'right') == 'left' ? 'left-0' : 'left-[calc(100%-3rem)]' }} pointer-events-none absolute top-0 flex flex-row items-center group no-underline">
 
     <div class="pointer-events-auto peer relative">
       <span

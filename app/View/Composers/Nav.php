@@ -26,7 +26,7 @@ class Nav extends Composer
                     "primary_navigation",
                     [
                         "menu_class" =>
-                            "flex flex-col gap-8 xl:gap-0 xl:items-center xl:flex-row justify-end",
+                            "flex flex-col gap-6 xl:gap-0 xl:items-center xl:flex-row justify-end",
                     ],
                     [
                         "level-0-link" =>

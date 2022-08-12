@@ -115,6 +115,8 @@
       <h1 class="max-w-2xl text-5xl font-bold uppercase italic md:text-6xl 2xl:text-7xl -mt-48">
         We support artists & elevate artists’ voices
       </h1>
+      <a class="hover:bg-white transition border-2 border-black px-6 py-2 font-mono font-bold lowercase 2xl:text-xl" href="https://www.axisweb.org/discover/">Discover Art and Artists
+</a>
     </div>
     <div class="hidden flex-1 items-center bg-white xl:flex lg:w-3/5">
       <div class="no-scrollbar perspective relative w-full overflow-y-hidden overflow-x-scroll py-16 2xl:py-32">
@@ -150,7 +152,7 @@
       <h2 class="max-w-2xl text-5xl font-bold uppercase italic md:text-6xl 2xl:text-7xl">
         We deliver projects that connect &amp; support artists
       </h2>
-      <a class="border-2 border-black px-6 py-2 font-mono font-bold lowercase 2xl:text-xl" href="/projects/">See all of our
+      <a class="hover:bg-white transition border-2 border-black px-6 py-2 font-mono font-bold lowercase 2xl:text-xl" href="/projects/">See all of our
         projects</a>
     </div>
     <div class="hidden flex-1 items-center bg-white xl:flex xl:w-3/5">
@@ -175,11 +177,11 @@
               @endif
   </div>
             <div class="w-1/2">
-              <h3 class="mb-6 text-3xl 2xl:text-4xl font-semibold font-mono">{{ $project->post_title }}</h3>
-              <p class="font-medium">
+              <h3 class="mb-4 text-3xl 2xl:text-4xl font-semibold font-mono">{{ $project->post_title }}</h3>
+              <p class="font-medium text-xl 2xl:text-2xl text-neutral-500 leading-tight">
                 {{ $project->post_excerpt }}
               </p>
-              <span class="antialiased font-semibold transform transition duration-500 ease-out  group-hover:translate-y-2 mt-4 -ml-16 inline-block rounded-r-full bg-axis-yellow px-16 py-4">Read more</span>
+              <span class="antialiased font-semibold transform transition duration-500 ease-out  group-hover:translate-y-2 mt-6 -ml-16 inline-block rounded-r-full bg-axis-yellow px-16 py-4">Read more</span>
             </div>
   </a>
           @endforeach
@@ -192,7 +194,7 @@
       <h2 class="max-w-2xl text-5xl font-bold uppercase italic md:text-6xl 2xl:text-7xl">
         We provide space where artists connect
       </h2>
-      <a class="border-2 border-black px-6 py-2 font-mono font-bold lowercase 2xl:text-xl" href="#">Become a member</a>
+      <a class="hover:bg-white transition border-2 border-black px-6 py-2 font-mono font-bold lowercase 2xl:text-xl" href="#">Become a member</a>
     </div>
     <div class="hidden flex-1 items-center bg-white xl:flex xl:w-3/5">
       <div class="no-scrollbar perspective relative w-full overflow-y-hidden overflow-x-scroll py-16 2xl:py-32">
@@ -224,9 +226,9 @@
   <div class="section-two preserve-3d flex flex-row" data-bg="bg-axis-blue">
     <div class="flex h-screen flex-col items-start justify-center gap-8 p-6 xl:w-2/5 lg:p-12 xl:pr-24">
       <h2 class="max-w-2xl text-5xl font-bold uppercase italic md:text-6xl 2xl:text-7xl">
-        We bring you the latest news &amp; opinion in art.
+        We bring you the latest news &amp; opinion in art
       </h2>
-      <a class="border-2 border-black px-6 py-2 font-mono font-bold lowercase 2xl:text-xl" href="{{ get_post_type_archive_link( 'post' )
+      <a class="hover:bg-white transition border-2 border-black px-6 py-2 font-mono font-bold lowercase 2xl:text-xl" href="{{ get_post_type_archive_link( 'post' )
  }}">Read articles</a>
     </div>
     <div class="hidden flex-1 items-center bg-white xl:flex xl:w-3/5">
@@ -256,7 +258,7 @@
             <div class="-mt-16">
               <span class="antialiased font-semibold transform transition duration-500 ease-out  group-hover:translate-y-2 mb-8 -ml-16 inline-block rounded-r-full bg-axis-yellow px-16 py-4">Read more</span>
               <h3 class="mb-2 text-3xl 2xl:text-4xl font-bold">{{ $post->post_title }}</h3>
-              <p class="text-xl font-mono">
+              <p class="text-lg 2xl:text-xl font-mono text-neutral-500">
               {{ get_the_date('', $post->ID) }}</p>
             </div>
             </a>
