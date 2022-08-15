@@ -57,12 +57,12 @@ figure {
 
 figure figcaption {
   margin: 0;
-  color: black !important;
+
   text-align: left !important;
   margin-top: 2rem !important;
   padding-left: 0.5rem;
   position: relative;
-  @apply font-mono antialiased;
+  @apply font-mono italic  tracking-tight !text-neutral-500 antialiased;
 }
 
 figure figcaption::before {

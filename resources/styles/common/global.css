@@ -1,1 +1,5 @@
 @import "_fonts";
+
+.has-large-font-size {
+  @apply text-2xl font-bold leading-tight;
+}

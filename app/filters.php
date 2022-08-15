@@ -12,12 +12,19 @@ namespace App;
  * @return string
  */
 add_filter("excerpt_more", function () {
-    return sprintf(
-        ' &hellip; <a href="%s">%s</a>',
-        get_permalink(),
-        __("Continued", "sage")
-    );
+    return "&hellip;";
 });
+
+add_filter(
+    "excerpt_length",
+    function ($length) {
+        if (is_admin()) {
+            return $length;
+        }
+        return 30;
+    },
+    999
+);
 
 add_filter("body_class", function ($classes) {
     $classes = array_merge($classes, ["font-sans"]);
