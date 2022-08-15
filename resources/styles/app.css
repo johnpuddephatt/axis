@@ -89,6 +89,11 @@ figure figcaption::before {
     var(--contentgutter) calc(-1 * var(--contentgutter)) !important;
 }
 
+h2 + .alignwide {
+  margin-top: 0 !important;
+  margin-bottom: calc(var(--contentgutter) / 2);
+}
+
 .alignfull {
   margin: calc(1 * var(--contentgutter))
     clamp(
