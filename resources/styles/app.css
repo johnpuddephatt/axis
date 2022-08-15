@@ -91,7 +91,7 @@ figure figcaption::before {
 
 h2 + .alignwide {
   margin-top: 0 !important;
-  margin-bottom: calc(var(--contentgutter) / 2);
+  margin-bottom: calc(var(--contentgutter) / 2) !important;
 }
 
 .alignfull {
