@@ -232,3 +232,7 @@ h2 + .alignwide {
 .ez-toc-link {
   @apply block border-b border-white py-4 font-mono hover:bg-white hover:bg-opacity-25 lg:py-6 lg:text-lg 2xl:text-xl;
 }
+
+dialog::backdrop {
+  @apply bg-black bg-opacity-70;
+}

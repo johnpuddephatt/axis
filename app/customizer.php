@@ -6,10 +6,7 @@ add_action("carbon_fields_register_fields", function () {
     $parent_options = Container::make(
         "theme_options",
         __("Theme Options")
-    )->add_fields([
-        Field::make("text", "crb_facebook_url", __("Something or other")),
-        Field::make("textarea", "crb_footer_text", __("Footer Text")),
-    ]);
+    )->add_fields([Field::make("textarea", "footer_text", __("Footer Text"))]);
 
     Container::make("theme_options", __("Organisation details"))
         ->set_page_parent($parent_options) // reference to a top level container

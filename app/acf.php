@@ -1,5 +1,99 @@
 <?php
-add_filter("acf/settings/show_admin", "__return_false");
+use Carbon_Fields\Container;
+use Carbon_Fields\Field;
+use Carbon_Fields\Block;
+
+// add_filter("acf/settings/show_admin", "__return_false");
+
+add_action("carbon_fields_register_fields", function () {
+    Block::make(__("Quote with image"))
+        ->add_fields([
+            Field::make("textarea", "quote", __("Quote")),
+            Field::make("text", "author", __("Author role/description")),
+            Field::make("text", "author_role", __("Author")),
+            Field::make("image", "author_image", __("Author image")),
+        ])
+        ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+            echo view(
+                "blocks.quote-with-image",
+                compact("fields", "attributes", "inner_blocks")
+            );
+        });
+    Block::make(__("Memberships"))
+        ->add_fields([
+            Field::make(
+                "association",
+                "memberships",
+                __("Memberships")
+            )->set_types([
+                [
+                    "type" => "post",
+                    "post_type" => "membership",
+                ],
+            ]),
+        ])
+        ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+            echo view(
+                "blocks.memberships",
+                compact("fields", "attributes", "inner_blocks")
+            );
+        });
+
+    Block::make(__("Frequently asked questions"))
+        ->add_fields([
+            Field::make(
+                "complex",
+                "faq",
+                __("Frequently asked question")
+            )->add_fields([
+                Field::make("text", "question", __("Question")),
+                Field::make("textarea", "answer", __("Answer")),
+            ]),
+        ])
+        ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+            echo view(
+                "blocks.faqs",
+                compact("fields", "attributes", "inner_blocks")
+            );
+        });
+
+    Container::make("post_meta", "About this membership")
+        ->where("post_type", "=", "membership")
+        ->add_fields([
+            Field::make("textarea", "description", __("Description"))->set_rows(
+                2
+            ),
+        ]);
+
+    Container::make("post_meta", "Billing")
+        ->where("post_type", "=", "membership")
+        ->add_fields([
+            Field::make("text", "cost", __("Membership cost")),
+            Field::make(
+                "text",
+                "annual_plan_id",
+                __("Chargebee annual plan ID")
+            ),
+            Field::make(
+                "text",
+                "monthly_plan_id",
+                __("Chargebee monthly plan ID")
+            ),
+        ]);
+
+    Container::make("post_meta", "Membership benefits")
+        ->where("post_type", "=", "membership")
+        ->add_fields([
+            Field::make("complex", "benefits", __("Benefits"))->add_fields([
+                Field::make("text", "title", __("Benefit title")),
+                Field::make(
+                    "textarea",
+                    "description",
+                    __("Benefit description")
+                ),
+            ]),
+        ]);
+});
 
 if (function_exists("acf_add_local_field_group")):
     acf_add_local_field_group([

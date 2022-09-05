@@ -12,6 +12,17 @@ return [
     */
 
     "post" => [
+        "membership" => [
+            "enter_title_here" => "Enter membership title",
+            "menu_icon" => "dashicons-nametag",
+            "supports" => ["title", "revisions", "thumbnail"],
+            "show_in_rest" => true,
+            "has_archive" => false,
+            "labels" => [
+                "singular" => "Membership",
+                "plural" => "Memberships",
+            ],
+        ],
         "project" => [
             "enter_title_here" => "Enter project title",
             "menu_icon" => "dashicons-groups",

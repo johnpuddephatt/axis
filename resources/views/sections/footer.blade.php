@@ -10,7 +10,7 @@
 
 </div>
 <div class="lg:w-5/12">
-  <p class="max-w-xl text-xl">We actively seek new collaborations with artists, producers, curators, commissioners and organisations who share our values and seek to with, support and profile artists.</p>
+  <p class="max-w-xl text-xl">{{ get_option('_footer_text') }}</p>
   <div class="antialiased mt-8 text-xl"><a class="italic font-semibold text-xl 2xl:text-2xl no-underline" href="mailto:hello@axisweb.org">hello@axisweb.org</a></div>
   @if(get_option('_address'))
   <div class="antialiased mt-1"><address class="text-xl 2xl:text-2xl font-medium">{{ get_option('_address') }}</address></div> 
