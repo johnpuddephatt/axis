@@ -194,7 +194,7 @@
       <h2 class="max-w-2xl text-5xl font-bold uppercase italic md:text-6xl 2xl:text-7xl">
         We provide space where artists connect
       </h2>
-      <a class="hover:bg-white transition border-2 border-black px-6 py-2 font-mono font-bold lowercase 2xl:text-xl" href="#">Become a member</a>
+      <a class="hover:bg-white transition border-2 border-black px-6 py-2 font-mono font-bold lowercase 2xl:text-xl" href="/membership/">Become a member</a>
     </div>
     <div class="hidden flex-1 items-center bg-white xl:flex xl:w-3/5">
       <div class="no-scrollbar perspective relative w-full overflow-y-hidden overflow-x-scroll py-16 2xl:py-32">
