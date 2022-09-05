@@ -5,11 +5,11 @@
 @foreach($fields['memberships'] as $membership)
 @php $post = get_post($membership['id']) @endphp
 <div class="flex flex-col  lg:flex-row rounded-3xl bg-white @if($loop->iteration == 1) lg:col-span-3 @endif">
-    <div class="px-8 py-8 lg:py-12 flex-1">
+    <div class="px-8 py-8 lg:py-12 flex-1 flex flex-col">
 <h3 class="mt-0 text-4xl mb-0 leading-none">{{ get_the_title($post->ID) }}</h3>
 <p class="font-bold text-axis-purple text-lg">£{{ carbon_get_post_meta($post->ID, 'cost') }} per month</p>
 <div class=" leading-normal font-bold max-w-md">{{ carbon_get_post_meta($post->ID, 'description') }}</div>
-<div><button class="antialiased font-semibold transform transition duration-500 ease-out  group-hover:translate-y-2 mt-6 -ml-16 inline-block mr-3 rounded-r-full bg-axis-yellow px-16 py-4"
+<div class="mt-auto"><button class="antialiased font-semibold transform transition duration-500 ease-out  group-hover:translate-y-2 mt-6 -ml-16 inline-block mr-3 rounded-r-full bg-axis-yellow px-16 py-4"
     onclick="document.body.classList.add('overflow-y-hidden');document.getElementById('dialog-{{ $post->ID }}').showModal()">find out more</button>
 </div>
 </div>
