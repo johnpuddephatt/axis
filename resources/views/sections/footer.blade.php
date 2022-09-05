@@ -1,4 +1,4 @@
-<footer class="bg-axis-green p-6 pt-24 lg:pt-32 lg:p-12">
+<footer class="bg-axis-green px-4 pt-24 lg:pt-32 lg:p-12">
   <div class="mb-16 flex flex-col xl:flex-row gap-16 lg:gap-32">
   <div class="lg:w-7/12 ">
     <h2 class="max-w-lg 2xl:max-w-xl text-5xl mb-6 font-bold uppercase italic md:text-6xl 2xl:text-7xl">Stay up to date with the latest</h2>
