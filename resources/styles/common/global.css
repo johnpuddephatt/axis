@@ -1,5 +1,25 @@
 @import "_fonts";
 
 .has-large-font-size {
-  @apply text-2xl font-bold leading-tight;
+  @apply mb-6 text-2xl font-bold leading-tight;
+}
+
+.wp-block-media-text {
+  gap: 1em;
+}
+
+.wp-block-media-text h2 {
+  @apply mb-4 font-mono text-3xl font-bold;
+}
+
+.wp-block-media-text p {
+  @apply mb-4;
+}
+
+.wp-block-button__link {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: black;
+
+  @apply -ml-16 inline-block transform rounded-r-full bg-axis-yellow px-16  py-4 font-semibold antialiased transition duration-500 ease-out hover:text-black group-hover:translate-y-2;
 }

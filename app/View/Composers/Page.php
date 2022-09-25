@@ -11,7 +11,12 @@ class Page extends Composer
      *
      * @var array
      */
-    protected static $views = ["page", "template-section", "template-join"];
+    protected static $views = [
+        "page",
+        "template-section",
+        "template-join",
+        "template-fullwidth",
+    ];
 
     /**
      * Data to be passed to view before rendering, but after merging.
