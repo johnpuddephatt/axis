@@ -20,6 +20,7 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   color: black;
+  text-decoration: none !important;
 
   @apply -ml-16 inline-block transform rounded-r-full bg-axis-yellow px-16  py-4 font-semibold antialiased transition duration-500 ease-out hover:text-black group-hover:translate-y-2;
 }
