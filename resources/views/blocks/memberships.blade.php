@@ -22,6 +22,7 @@
 
 @if(count(carbon_get_post_meta($post->ID, 'benefits')))
 <dialog onclose="document.body.classList.remove('overflow-y-hidden');" id="dialog-{{ $post->ID }}" class="w-full max-w-xl backdrop:bg-axis-purple open:shadow-lg open:ring-1 open:ring-black/5 bg-white rounded-3xl p-0">
+    <button class="fixed top-4 right-4 bg-white p-2 rounded-full text-3xl" aria-label="Close">×</button>
     <div class="p-12 pb-0">
     <h3 class="text-3xl mt-0 mb-0">{{ get_the_title($post->ID) }} membership</h3>
     <p class="font-semibold text-lg text-axis-purple">£{{ carbon_get_post_meta($post->ID, 'cost') }} per month</p>
@@ -42,8 +43,6 @@ Subscribe monthly</button>
 <button onclick="document.body.classList.remove('overflow-y-hidden');document.getElementById('dialog-{{ $post->ID }}').close();" data-cb-type="checkout" class="font-semibold border-2 border-axis-cream bg-axis-cream px-6 py-2" data-cb-plan-id="{{ carbon_get_post_meta($post->ID, 'monthly_plan_id') }}">
 Subscribe annually</button>
 </div>
-
-
 </dialog>
 @endif
 @endforeach
