@@ -6,7 +6,7 @@
       
   @include('partials.header-section', ['pattern' => 'header-opportunities'])
     <div class="container px-4 max-w-6xl">
-      <div class="toc-horizontal">
+      <div class="toc-horizontal my-12">
         {!! do_shortcode('[toc]') !!}
       </div>
       {{ the_content() }}     
