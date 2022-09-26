@@ -4,8 +4,8 @@
 @extends('layouts.app')
 @section('content')
       
-  @include('partials.header-section', ['pattern' => 'header-section'])
-    <div class="container px-4 max-w-5xl">
+  @include('partials.header-section', ['pattern' => 'header-opportunities'])
+    <div class="container px-4 max-w-6xl">
       <div class="toc-horizontal">
         {!! do_shortcode('[toc]') !!}
       </div>
