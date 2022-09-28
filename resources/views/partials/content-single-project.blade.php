@@ -16,7 +16,7 @@
   </header>
 
   <div class="entry-content xl:w-3/5 bg-white">
-    {!! get_the_post_thumbnail(null, '2by1', ['class' => 'w-full', 'sizes' => '80vw']) !!}
+    {!! get_the_post_thumbnail(null, '4by3', ['class' => 'w-full', 'sizes' => '80vw']) !!}
     <div class="py-16 p-6 lg:p-16 xl:py-24 xl:px-32">
       <div class="prose prose-lg 2xl:prose-xl">
         {{ the_content() }}
