@@ -1,12 +1,12 @@
 <article {{ post_class("flex flex-col xl:flex-row") }}>  
    
   <header class="bg-axis-purple px-6 xl:px-12 flex-none xl:w-2/5 xl:min-h-screen">
-    <div class="py-12 md:py-16 xl:h-[80vh] flex flex-col justify-center">
+    <div class="py-12 md:py-16 xl:h-[33.75vw] flex flex-col justify-center">
       <div class="text-xl 2xl:text-2xl font-mono antialiased text-white">Project.</div>
       <h1 class="max-w-2xl mt-8 mb-6 text-5xl sm:text-6xl 2xl:text-7xl italic uppercase">{!! $post->post_title !!}</h1>
       <div class="font-semibold text-3xl 2xl:text-4xl max-w-xs">{{ $post->post_excerpt }}</div>
     </div>
-    <nav class="max-w-xs xl:-mt-12 mb-24">
+    <nav class="max-w-xs mb-24">
       <p><a class="ez-toc-link" href="#project-overview">Overview</a></p>
       {!! do_shortcode('[toc]') !!}
       @if($posts)
