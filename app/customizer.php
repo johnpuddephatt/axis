@@ -6,13 +6,25 @@ add_action("carbon_fields_register_fields", function () {
     $parent_options = Container::make(
         "theme_options",
         __("Theme Options")
-    )->add_fields([Field::make("textarea", "footer_text", __("Footer Text"))]);
+    )->add_fields([
+        Field::make("textarea", "footer_title", __("Footer Title")),
+        Field::make("textarea", "footer_text", __("Footer Text")),
+    ]);
 
     Container::make("theme_options", __("Organisation details"))
         ->set_page_parent($parent_options) // reference to a top level container
         ->add_fields([
             Field::make("textarea", "address", __("Address ")),
             Field::make("text", "charitynumber", __("Charity number")),
+        ]);
+
+    Container::make("theme_options", __("Homepage"))
+        ->set_page_parent($parent_options) // reference to a top level container
+        ->add_fields([
+            Field::make("text", "home_section_1", __("Section 1 (directory)")),
+            Field::make("text", "home_section_2", __("Section 2 (projects)")),
+            Field::make("text", "home_section_3", __("Section 3 (members)")),
+            Field::make("text", "home_section_4", __("Section 4 (posts)")),
         ]);
 
     Container::make("theme_options", __("Social Links"))

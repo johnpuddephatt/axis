@@ -113,7 +113,7 @@
   <div class="preserve-3d flex flex-row " data-bg="bg-axis-yellow">
     <div class="flex h-screen flex-col items-start justify-center gap-12 p-6 xl:w-2/5 lg:p-12 xl:pr-24">
       <h1 class="max-w-2xl text-5xl font-bold uppercase italic md:text-6xl 2xl:text-7xl -mt-48">
-        We support artists & elevate artists’ voices
+        {{ carbon_get_theme_option('home_section_1') }}
       </h1>
       <a class="hover:bg-white transition border-2 border-black px-6 py-2 font-mono font-bold lowercase 2xl:text-xl" href="https://www.axisweb.org/discover/">Discover Art and Artists
 </a>
@@ -150,7 +150,7 @@
   <div class="section-two preserve-3d flex flex-row" data-bg="bg-axis-purple">
     <div class="flex h-screen flex-col items-start justify-center gap-12 p-6 xl:w-2/5 lg:p-12 xl:pr-24">
       <h2 class="max-w-2xl text-5xl font-bold uppercase italic md:text-6xl 2xl:text-7xl">
-        We deliver projects that connect &amp; support artists
+        {{ carbon_get_theme_option('home_section_2') }}
       </h2>
       <a class="hover:bg-white transition border-2 border-black px-6 py-2 font-mono font-bold lowercase 2xl:text-xl" href="/projects/">See all of our
         projects</a>
@@ -192,7 +192,7 @@
   <div class="section-two preserve-3d flex flex-row" data-bg="bg-axis-cream">
     <div class="flex h-screen flex-col items-start justify-center gap-8 p-6 xl:w-2/5 lg:p-12 xl:pr-24">
       <h2 class="max-w-2xl text-5xl font-bold uppercase italic md:text-6xl 2xl:text-7xl">
-        We provide space where artists connect
+        {{ carbon_get_theme_option('home_section_3') }}
       </h2>
       <a class="hover:bg-white transition border-2 border-black px-6 py-2 font-mono font-bold lowercase 2xl:text-xl" href="/membership/">Become a member</a>
     </div>
@@ -226,7 +226,7 @@
   <div class="section-two preserve-3d flex flex-row" data-bg="bg-axis-blue">
     <div class="flex h-screen flex-col items-start justify-center gap-8 p-6 xl:w-2/5 lg:p-12 xl:pr-24">
       <h2 class="max-w-2xl text-5xl font-bold uppercase italic md:text-6xl 2xl:text-7xl">
-        We bring you the latest news &amp; opinion in art
+        {{ carbon_get_theme_option('home_section_4') }}
       </h2>
       <a class="hover:bg-white transition border-2 border-black px-6 py-2 font-mono font-bold lowercase 2xl:text-xl" href="{{ get_post_type_archive_link( 'post' )
  }}">Read articles</a>
