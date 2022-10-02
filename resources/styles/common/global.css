@@ -22,5 +22,5 @@
   color: black;
   text-decoration: none !important;
 
-  @apply inline-block transform rounded-r-full bg-axis-yellow px-8 py-4  font-semibold antialiased transition duration-500 ease-out visited:text-black hover:text-black group-hover:translate-y-2;
+  @apply -ml-8 inline-block transform rounded-r-full bg-axis-yellow py-4 pl-8 pr-16  font-semibold antialiased transition duration-500 ease-out visited:text-black hover:text-black group-hover:translate-y-2;
 }
