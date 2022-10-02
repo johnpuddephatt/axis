@@ -22,8 +22,9 @@
         {{ the_content() }}
       </div>
 </div>
-<div class="border-t py-16 p-6 lg:p-16 xl:px-32">
       @if($posts)
+      <div class="border-t py-16 p-6 lg:p-16 xl:px-32">
+
         <h2 id="project-posts" class="mt-16 font-bold text-3xl lg:!-mb-12 xl:!-mb-16">Project updates</h2>
         <div class="">
           <div class="alignfull">
@@ -57,7 +58,8 @@
            <a class="inline-block  no-underline font-mono font-bold border-2 border-axis-cream px-6 py-2 text-lg 2xl:text-xl" href="{{ get_permalink( get_option( 'page_for_posts' ) ) }}?projects={{ $post->post_name }}">
               see all {{ $post->post_title }} updates</a>
         </div>
+        </div>
       @endif
-    </div>
+  
   </div>
 </article>
