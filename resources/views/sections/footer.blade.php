@@ -1,7 +1,9 @@
 <footer class="bg-axis-green px-4 pt-24 lg:pt-32 lg:p-12">
   <div class="mb-16 flex flex-col xl:flex-row gap-16 lg:gap-32">
   <div class="lg:w-7/12 ">
-    <h2 class="max-w-lg 2xl:max-w-xl text-5xl mb-6 font-bold uppercase italic md:text-6xl 2xl:text-7xl">Stay up to date with the latest</h2>
+    <h2 class="max-w-lg 2xl:max-w-xl text-5xl mb-6 font-bold uppercase italic md:text-6xl 2xl:text-7xl">
+      {{ carbon_get_theme_option('footer_title') }}
+    </h2>
 
     <form class="max-w-lg 2xl:max-w-xl flex flex-row w-full">
       <input type="text" class="peer focus-within:outline-none focus-within:border-white flex-grow text-lg lg:text-xl px-0 py-3 lg:py-4 border-b-2 border-black bg-transparent placeholder:text-black" placeholder="Enter your email address" />
