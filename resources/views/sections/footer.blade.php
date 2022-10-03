@@ -5,10 +5,11 @@
       {{ carbon_get_theme_option('footer_title') }}
     </h2>
 
-    <form class="max-w-lg 2xl:max-w-xl flex flex-row w-full">
+    <!-- <form class="max-w-lg 2xl:max-w-xl flex flex-row w-full">
       <input type="text" class="peer focus-within:outline-none focus-within:border-white flex-grow text-lg lg:text-xl px-0 py-3 lg:py-4 border-b-2 border-black bg-transparent placeholder:text-black" placeholder="Enter your email address" />
       <input class="hover:bg-white peer-focus-within:border-white lowercase hover:text-black transition text-lg lg:text-xl px-8 lg:px-12 py-3 lg:py-4 border-2 border-black font-mono  text-white" type="submit" value="Sign up" >
-  </form>
+  </form> -->
+  <a class="hover:bg-white peer-focus-within:border-white lowercase hover:text-black transition text-lg lg:text-xl px-8 lg:px-12 py-3 lg:py-4 border-2 border-black font-mono  text-white" target="_blank" href="https://www.axisweb.org/signup">Sign up</a>
 
 </div>
 <div class="lg:w-5/12">
