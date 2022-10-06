@@ -12,6 +12,10 @@
   @apply mb-4 font-mono text-3xl font-bold;
 }
 
+.wp-block-media-text__content > h2 {
+  margin-top: 0;
+}
+
 .wp-block-media-text p {
   @apply mb-4;
 }

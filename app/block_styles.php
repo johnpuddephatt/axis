@@ -10,7 +10,7 @@ if (function_exists("register_block_style")) {
         "label" => __("Square background", "textdomain"),
         "is_default" => false,
         "inline_style" =>
-            ".wp-block-media-text.is-style-square-background { padding: 6rem 0; position: relative; } .wp-block-media-text.is-style-square-background::before { content: ''; top: 50%; display: block; height: 25em; width: 25em; background-color: #fbf6f1; position: absolute; left: 50%; transform: translate(-50%,-50%); z-index: -1;  }",
+            ".wp-block-media-text.is-style-square-background { position: relative; } .wp-block-media-text.is-style-square-background::before { content: ''; top: 50%; display: block; height: 25em; width: 25em; background-color: #fbf6f1; position: absolute; left: 50%; transform: translate(-50%,-50%); z-index: -1;  }",
     ]);
 
     register_block_style("core/media-text", [
@@ -18,7 +18,7 @@ if (function_exists("register_block_style")) {
         "label" => __("Diamond background", "textdomain"),
         "is_default" => false,
         "inline_style" =>
-            ".wp-block-media-text.is-style-diamond-background {  padding: 6rem 0; position: relative; } .wp-block-media-text.is-style-diamond-background::before { content: ''; top: 50%; display: block; height: 25em; width: 25em; background-color: #fbf6f1; position: absolute; left: 50%; transform: translate(-50%,-50%) rotate(45deg); z-index: -1; }",
+            ".wp-block-media-text.is-style-diamond-background {  position: relative; } .wp-block-media-text.is-style-diamond-background::before { content: ''; top: 50%; display: block; height: 25em; width: 25em; background-color: #fbf6f1; position: absolute; left: 50%; transform: translate(-50%,-50%) rotate(45deg); z-index: -1; }",
     ]);
 
     register_block_style("core/media-text", [
@@ -26,7 +26,7 @@ if (function_exists("register_block_style")) {
         "label" => __("Circle background", "textdomain"),
         "is_default" => false,
         "inline_style" =>
-            ".wp-block-media-text.is-style-circle-background {  padding: 6rem 0; position: relative; } .wp-block-media-text.is-style-circle-background::before { content: ''; top: 50%; display: block; height: 25em; width: 25em; background-color: #fbf6f1; position: absolute; left: 50%; transform: translate(-50%,-50%); border-radius: 100%; z-index: -1; }",
+            ".wp-block-media-text.is-style-circle-background { position: relative; } .wp-block-media-text.is-style-circle-background::before { content: ''; top: 50%; display: block; height: 25em; width: 25em; background-color: #fbf6f1; position: absolute; left: 50%; transform: translate(-50%,-50%); border-radius: 100%; z-index: -1; }",
     ]);
 
     register_block_style("core/image", [
