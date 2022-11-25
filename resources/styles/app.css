@@ -259,7 +259,3 @@ dialog::backdrop {
   overflow: hidden;
   width: 5em;
 }
-
-.wp-block-media-text__content > h2 {
-  margin-top: 0;
-}

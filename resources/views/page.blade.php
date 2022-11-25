@@ -3,9 +3,11 @@
   @while (have_posts())
     @php(the_post())
     <div class="">
+      <div class="min-h-[6em]">
       {!! get_the_post_thumbnail(null, '3by1', ['class' => 'w-full xl:w-4/5 xl:ml-auto lg:mt-16 mb-12 lg:mb-24', 'sizes' => '80vw']) !!}
+      </div>
 
-      <div class="flex flex-col-reverse xl:flex-row mb-24">
+      <div class="flex flex-col-reverse xl:flex-row mb-24 @if (!$siblings) justify-center @endif">
         @if ($siblings)
           <aside class="mt-16 pt-16 xl:pt-0 xl:mt-0 font-mono px-4 lg:px-0 py-2 xl:w-2/5 border-t xl:border-none">
             <nav class="xl:max-w-sm ml-auto block xl:mr-16">

@@ -79,6 +79,7 @@ add_action("carbon_fields_register_fields", function () {
                 "monthly_plan_id",
                 __("Chargebee monthly plan ID")
             ),
+            Field::make("text", "url", __("URL")),
         ]);
 
     Container::make("post_meta", "Membership benefits")

@@ -38,10 +38,20 @@
 </div>
 </div>
 <div class="px-12 py-3 border-t border-gray flex flex-row gap-2 items-center justify-end">
+@if(carbon_get_post_meta($post->ID, 'monthly_plan_id'))
 <button onclick="document.body.classList.remove('overflow-y-hidden');document.getElementById('dialog-{{ $post->ID }}').close();" data-cb-type="checkout" class="font-semibold border-2 border-axis-cream bg-axis-cream px-6 py-2" data-cb-plan-id="{{ carbon_get_post_meta($post->ID, 'monthly_plan_id') }}">
 Subscribe monthly</button>
-<button onclick="document.body.classList.remove('overflow-y-hidden');document.getElementById('dialog-{{ $post->ID }}').close();" data-cb-type="checkout" class="font-semibold border-2 border-axis-cream bg-axis-cream px-6 py-2" data-cb-plan-id="{{ carbon_get_post_meta($post->ID, 'monthly_plan_id') }}">
+@endif
+
+@if(carbon_get_post_meta($post->ID, 'annual_plan_id'))
+<button onclick="document.body.classList.remove('overflow-y-hidden');document.getElementById('dialog-{{ $post->ID }}').close();" data-cb-type="checkout" class="font-semibold border-2 border-axis-cream bg-axis-cream px-6 py-2" data-cb-plan-id="{{ carbon_get_post_meta($post->ID, 'annual_plan_id') }}">
 Subscribe annually</button>
+@endif
+
+@if(carbon_get_post_meta($post->ID, 'url'))
+<a href="{{ carbon_get_post_meta($post->ID, 'url') }}" onclick="document.body.classList.remove('overflow-y-hidden');document.getElementById('dialog-{{ $post->ID }}').close();" class="no-underline font-semibold border-2 border-axis-cream bg-axis-cream px-6 py-2">
+Sign up</a>
+@endif
 </div>
 </dialog>
 @endif
