@@ -1,6 +1,4 @@
 @if(isset($fields['memberships']))
-<script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="axisweb"></script>
-
 <div class="px-4 container relative py-24 grid lg:grid-cols-3 gap-8 lg:gap-x-12 lg:gap-y-16">
 @foreach($fields['memberships'] as $membership)
 @php $post = get_post($membership['id']) @endphp
