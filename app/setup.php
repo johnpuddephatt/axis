@@ -36,6 +36,13 @@ add_action(
     100
 );
 
+add_action("do_meta_boxes", function () {
+    remove_meta_box("ez-toc", "project", "advanced");
+    remove_meta_box("ez-toc", "membership", "advanced");
+    remove_meta_box("ez-toc", "post", "advanced");
+    remove_meta_box("ez-toc", "page", "advanced");
+});
+
 /**
  * Register the initial theme setup.
  *
@@ -43,6 +50,7 @@ add_action(
  */
 add_action(
     "after_setup_theme",
+
     function () {
         // register_block_type("app/resources/scripts/recipe-card");
 
