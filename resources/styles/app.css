@@ -151,11 +151,20 @@ h2 + .alignwide {
   scrollbar-width: none;
 }
 
+.hover\:strikethrough,
 .strikethrough {
   position: relative;
   z-index: 2;
 }
 
+.hover\:strikethrough::before {
+  opacity: 0;
+}
+.hover\:strikethrough:hover::before {
+  opacity: 1;
+}
+
+.hover\:strikethrough::before,
 .strikethrough::before {
   content: "";
   z-index: -1;
@@ -167,6 +176,7 @@ h2 + .alignwide {
   background-color: #fff;
   transform: translateY(-50%);
 }
+.hover\:strikethrough.strikethrough-yellow::before,
 .strikethrough.strikethrough-yellow::before {
   background-color: #ecf770;
 }
@@ -229,12 +239,21 @@ h2 + .alignwide {
   @apply border-2  border-axis-cream px-6 py-2 xl:ml-2;
 }
 
+.join-button a::before,
+.login-button a::before {
+  content: none !important;
+}
+
 .ez-toc-link {
   @apply block border-b border-white py-4 font-mono hover:bg-white hover:bg-opacity-25 lg:py-6 lg:text-lg 2xl:text-xl;
 }
 
 dialog::backdrop {
   @apply bg-black bg-opacity-70;
+}
+
+.prose #ez-toc-container {
+  display: none;
 }
 
 .toc-horizontal .ez-toc-list {
@@ -258,4 +277,8 @@ dialog::backdrop {
   padding-bottom: 0.25em;
   overflow: hidden;
   width: 5em;
+}
+
+li.active a {
+  @apply border-b-2 border-axis-yellow;
 }

@@ -12,7 +12,7 @@
     {!! get_the_post_thumbnail(null, '2by1', ['class' => 'w-full', 'sizes' => '80vw']) !!}
 <div class="py-16 p-6 lg:p-16 xl:py-24 xl:px-32">
     <div class="prose prose-lg 2xl:prose-xl">
-      {!! $post->post_content !!}
+      {{ the_content() }}
     </div>
   </div>
 </div>

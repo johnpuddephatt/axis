@@ -29,8 +29,7 @@ class Nav extends Composer
                             "flex flex-col gap-6 xl:gap-0 xl:items-center xl:flex-row justify-end",
                     ],
                     [
-                        "level-0-link" =>
-                            "inline-block  px-2 xl:px-4 2xl:px-6  hover:strikethrough strikethrough-yellow",
+                        "level-0-link" => "inline-block  px-2 xl:mx-2 2xl:px-4",
                         "level-1-link" => "text-sm",
                     ]
                 ),

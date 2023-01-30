@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Default Assets Manifest
@@ -13,7 +12,7 @@ return [
     |
     */
 
-    'default' => 'theme',
+    "default" => "theme",
 
     /*
     |--------------------------------------------------------------------------
@@ -30,12 +29,12 @@ return [
     |
     */
 
-    'manifests' => [
-        'theme' => [
-            'path' => get_theme_file_path('public'),
-            'url' => get_theme_file_uri('public'),
-            'assets' => get_theme_file_path('public/manifest.json'),
-            'bundles' => get_theme_file_path('public/entrypoints.json'),
-        ]
-    ]
+    "manifests" => [
+        "theme" => [
+            "path" => get_theme_file_path("public"),
+            "url" => get_theme_file_uri("public"),
+            "assets" => get_theme_file_path("public/manifest.json"),
+            "bundles" => get_theme_file_path("public/entrypoints.json"),
+        ],
+    ],
 ];

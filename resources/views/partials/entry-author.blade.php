@@ -9,6 +9,8 @@
 
        <span class="font-mono antialiased ml-1">
             <span class="capitalize leading-none 2xl:leading-none mb-0.5 block text-lg 2xl:text-xl">{{ get_the_author() }}</span>
+            @if(class_exists('ACF') ) :
             <span class="block leading-none 2xl:leading-none text-base 2xl:text-lg">{{ the_field('role_title', 'user_' . get_the_author_meta( 'ID' )) }}</span>
+            @endif
        </span>
     </a>
