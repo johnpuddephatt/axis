@@ -33,7 +33,7 @@ class Home extends Composer
             "post_type" => "project",
             "orderby" => "menu_order",
             "order" => "ASC",
-            "numberposts" => 6,
+            "numberposts" => 3,
         ]);
     }
 
